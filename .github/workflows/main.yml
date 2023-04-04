@@ -39,7 +39,7 @@ jobs:
         uses: github/codeql-action/init@v2
         # Override language selection by uncommenting this and choosing your languages
         with:
-        queries: +./${{ env.CI_TMP_DIR }}/codeql/deps.ql
+            queries: +./${{ env.CI_TMP_DIR }}/codeql/deps.ql
         #   languages: go, javascript, csharp, python, cpp, java, ruby
 
       # Autobuild attempts to build any compiled languages (C/C++, C#, Go, or Java).
